@@ -13,3 +13,8 @@ puts "人数が、#{person}人の場合、"
 amount_per_person = amount / person 
 remainder = amount % person
 puts "一人当たり#{amount_per_person}円です。余りは#{remainder}円です。"
+
+price = 128
+weight = 300
+amount = ((price.to_f / 100) * weight).to_i
+puts "100グラム#{price}円の肉、#{weight}グラムは、#{amount}円です。"

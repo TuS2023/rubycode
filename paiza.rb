@@ -59,3 +59,38 @@ if s.include? a
 else
   puts 'NO'
 end
+#文字列の数字から取り出して計算
+S = gets.to_s
+A = S.slice(0).to_i + S.slice(3).to_i
+B = S.slice(1).to_i + S.slice(2).to_i
+puts "#{A}#{B}"
+
+s = gets
+
+a = s[0].to_i + s[3].to_i
+b = s[1].to_i + s[2].to_i
+
+puts a.to_s + b.to_s
+
+#数字が2桁なら0を1個、1桁なら2個出力
+n = gets.to_i 
+if n >= 100
+    puts n        
+elsif n >= 10 && n <= 99
+    puts "0" + n.to_s
+else    
+    puts "00" + n.to_s 
+end
+#正答
+n = gets.to_i
+
+puts sprintf('%03d', n)
+#文字列.split(':') で 
+#文字列 を ':' で区切った配列を取得できる
+#文字列.to_i は 01 などの整数として
+#意味を成さない 0 を無視して整数に変換する
+s = gets
+
+a = s.split(':').map(&:to_i)
+puts a[0]
+puts a[1]

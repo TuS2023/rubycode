@@ -69,3 +69,44 @@ item_3 = ["毒消し", "薬草", "アイアンシールド"]
 # item_1 ~ 3を、basket配列に代入して、pメソッドで出力してください。
 basket = [item_1, item_2, item_3]
 p basket
+
+basket = [["木の棒", "こん棒", "エクスカリバー"], ["おにぎり", "おにぎり", "むぎ茶"], ["毒消し", "薬草", "アイアンシールド"]]
+
+# ここに、要素を追加するコードを記述する
+basket[0][2] = "石斧"
+
+p basket
+
+teams = [["勇者", "戦士"], ["盗賊", "忍者", "商人"], ["スライム", "ドラゴン", "魔王"], ["魔法使い"]]
+p teams
+
+teams.push(["メタルモンスター", "シルバーモンスター", "ブラックモンスター"])
+p teams
+
+teams[0].push("レッドドラゴン")
+p teams
+p teams.length 
+p teams[0].length
+
+teams.delete_at(1)
+p teams
+p teams.length 
+
+teams[0].delete_at(1)
+p teams
+p teams.length 
+p teams[0].length
+
+basket = [["木の棒", "こん棒", "エクスカリバー"], ["おにぎり", "おにぎり", "むぎ茶"], ["毒消し", "薬草", "アイアンシールド"]]
+
+# ここに、要素を追加するコードを記述する
+basket[0].push("石斧")
+
+p basket
+
+basket = [["木の棒", "こん棒", "エクスカリバー"], ["おにぎり", "おにぎり", "むぎ茶"], ["毒消し", "薬草", "アイアンシールド"]]
+
+# ここに、要素を削除するコードを記述する
+basket[2].delete_at(2)
+
+p basket

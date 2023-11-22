@@ -14,3 +14,58 @@ items_order.each do |item_name|
     puts "<img src = '#{items_img[item_name]}'>"
     puts "#{item_name}<br>"
 end
+
+items_img = {
+    "剣" => "http://paiza.jp/learning/images/sword.png",
+    "盾" => "http://paiza.jp/learning/images/shield.png",
+    "回復薬" => "http://paiza.jp/learning/images/potion.png",
+    "クリスタル" => "http://paiza.jp/learning/images/crystal.png"
+}
+
+# アイテムの並び順配列
+items_order = ["クリスタル", "盾", "剣", "回復薬", "回復薬", "回復薬"]
+items_order.each do |item|
+    puts "<img src = '#{items_img[item]}'>" 
+    puts "#{item}<br>"
+end
+
+items_img = {
+    "剣" => "http://paiza.jp/learning/images/sword.png",
+    "盾" => "http://paiza.jp/learning/images/shield.png",
+    "回復薬" => "http://paiza.jp/learning/images/potion.png",
+    "クリスタル" => "http://paiza.jp/learning/images/crystal.png"
+}
+
+# アイテムの並び順配列
+items_order = ["剣", "盾", "回復薬", "クリスタル"]
+
+# ここから下を記述しよう
+items_order.each do |item|
+    puts "<img src='#{items_img[item]}'><br>"
+end
+
+# 出力するアイテム数を変数に代入
+item_cnt = gets.to_i
+
+# 標準入力にあるアイテムを出力する
+while item_cnt > 0
+  item = gets.chomp
+  puts "<img src = '#{items_img[item]}'>"
+  item_cnt = item_cnt - 1
+end
+
+array = [["勇者","忍者","武士",],["戦士","僧侶","魔法使い"]]
+# この下で、arrayを出力してみよう
+p array[0]
+
+array = [["勇者","忍者","武士",],["戦士","僧侶","魔法使い"]]
+# この下で、arrayを出力してみよう
+p array[1][2]
+
+item_1 = ["木の棒", "こん棒", "エクスカリバー"]
+item_2 = ["おにぎり", "おにぎり", "むぎ茶"]
+item_3 = ["毒消し", "薬草", "アイアンシールド"]
+
+# item_1 ~ 3を、basket配列に代入して、pメソッドで出力してください。
+basket = [item_1, item_2, item_3]
+p basket
